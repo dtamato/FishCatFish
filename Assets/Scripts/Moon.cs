@@ -12,7 +12,7 @@ public class Moon : MonoBehaviour {
 
 	[SerializeField] float sizeChangeSpeed;
 
-	[SerializeField] SpriteRenderer waterSpriteRenderer;
+	[SerializeField] Water water;
 
 	bool changingSize = false;
 	float currentSize;
@@ -29,6 +29,7 @@ public class Moon : MonoBehaviour {
 
 		if (changingSize) {
 
+			// Check if moon size should stop changing
 			if (Mathf.Abs(currentSize - newSize) <= 0.01f) {
 
 				if(newSize == 1) { currentSize = 1; }
@@ -52,5 +53,6 @@ public class Moon : MonoBehaviour {
 
 		newSize = (currentSize == 1) ? 3 : 1;
 		changingSize = true;
+		water.ChangeTide();
 	}
 }
