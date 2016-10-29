@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,9 +10,15 @@ public class Boat : MonoBehaviour {
 
 	[Header("References")]
 	[SerializeField] GameObject catPrefab;
+	[SerializeField] Text fish1CountText;
+	[SerializeField] Text fish2CountText;
+	[SerializeField] Text fish3CountText;
 
 	Rigidbody2D rb2d;
 	bool isOnWater;
+	int fish1Count;
+	int fish2Count;
+	int fish3Count;
 
 	// Cat Stuff
 	bool catOnboard;
@@ -22,6 +28,9 @@ public class Boat : MonoBehaviour {
 		rb2d = this.GetComponentInChildren<Rigidbody2D>();
 		isOnWater = true;
 		catOnboard = true;
+		fish1Count = 0;
+		fish2Count = 0;
+		fish3Count = 0;
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
@@ -84,5 +93,16 @@ public class Boat : MonoBehaviour {
 
 			sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
 		}
+	}
+
+	public void AddFish(int fish1, int fish2, int fish3) {
+
+		fish1Count += fish1;
+		fish2Count += fish2;
+		fish3Count += fish3;
+
+		fish1CountText.text = fish1Count.ToString ("000");
+		fish2CountText.text = fish2Count.ToString ("000");
+		fish3CountText.text = fish3Count.ToString ("000");
 	}
 }
