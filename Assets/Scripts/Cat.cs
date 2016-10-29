@@ -10,16 +10,16 @@ public class Cat : MonoBehaviour {
 
 	Rigidbody2D rb2d;
 	GameObject boat;
-	float initialMovementSpeed;
+	bool inWater;
 	int pointsCollected;
 	int fish1Count;
 	int fish2Count;
 	int fish3Count;
 
+
 	void Awake () {
 
 		rb2d = this.GetComponentInChildren<Rigidbody2D>();
-		initialMovementSpeed = movementSpeed;
 		ResetFishAndPoints ();
 	}
 
@@ -33,25 +33,38 @@ public class Cat : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 
-		if(other.CompareTag("Fish")) {
+		if (other.CompareTag ("Fish")) {
 
-			int points = other.GetComponentInChildren<Fish>().GetPoints();
+			int points = other.GetComponentInChildren<Fish> ().GetPoints ();
 			pointsCollected += points;
 			switch (other.GetComponentInChildren<Fish> ().GetFishType ()) {
 			case 1:
 				fish1Count++;
-				initialMovementSpeed *= 0.95f;
+				movementSpeed *= 0.95f;
 				break;
 			case 2:
 				fish2Count++;
-				initialMovementSpeed *= 0.85f;
+				movementSpeed *= 0.85f;
 				break;
 			case 3:
 				fish3Count++;
-				initialMovementSpeed *= 0.75f;
+				movementSpeed *= 0.75f;
 				break;
 			}
-			Destroy(other.gameObject);
+			Destroy (other.gameObject);
+		}
+		else if (other.CompareTag ("Water")) {
+
+			inWater = true;
+			ResetFishAndPoints ();
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D other) {
+
+		if (other.CompareTag ("Water")) {
+
+			inWater = false;
 		}
 	}
 
@@ -62,7 +75,10 @@ public class Cat : MonoBehaviour {
 
 	public void MovePosition (Vector2 direction) {
 
-		rb2d.MovePosition((Vector2)this.transform.position + movementSpeed * direction);
+		if (!inWater) {
+			
+			rb2d.MovePosition ((Vector2)this.transform.position + movementSpeed * direction);
+		}
 	}
 
 	public void Board () {

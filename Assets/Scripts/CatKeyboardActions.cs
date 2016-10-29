@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Rewired;
+using UnityEngine;
 using System.Collections;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Cat))]
 public class CatKeyboardActions : MonoBehaviour {
 
+	Player player;
 	Cat cat;
 
 

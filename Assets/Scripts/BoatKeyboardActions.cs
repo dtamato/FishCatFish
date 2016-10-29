@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Rewired;
+using UnityEngine;
 using System.Collections;
 
 [DisallowMultipleComponent]
@@ -6,11 +7,13 @@ using System.Collections;
 public class BoatKeyboardActions : MonoBehaviour {
 
 	Boat boat;
+	Player player;
 
 
 	void Awake () {
 
 		boat = this.GetComponentInChildren<Boat>();
+		player = ReInput.players.GetPlayer (boat.GetPlayerID ());
 	}
 
 	void Update () {
@@ -18,21 +21,21 @@ public class BoatKeyboardActions : MonoBehaviour {
 		Vector2 moveDirection = Vector2.zero;
 
 		// Left-Right
-		if(Input.GetKey(KeyCode.A)) {
-
-			moveDirection += new Vector2(-1, 0);
-		}
-		else if (Input.GetKey(KeyCode.D)) {
+		if(player.GetAxisRaw("Horizontal") > 0) {
 
 			moveDirection += new Vector2(1, 0);
 		}
+		else if (player.GetAxisRaw("Horizontal") < 0) {
+
+			moveDirection += new Vector2(-1, 0);
+		}
 
 		// Up-Down
-		if(Input.GetKey(KeyCode.W)) {
+		if(player.GetAxisRaw("Vertical") > 0) {
 
 			moveDirection += new Vector2(0, 1);
 		}
-		else if(Input.GetKey(KeyCode.S)) {
+		else if(player.GetAxisRaw("Vertical") < 0) {
 
 			moveDirection += new Vector2(0, -1);
 		}
@@ -44,7 +47,7 @@ public class BoatKeyboardActions : MonoBehaviour {
 		}
 
 		// Unboard
-		if(Input.GetKeyDown(KeyCode.Space)) {
+		if(player.GetButtonDown("BoardUnboard")) {
 
 			boat.UnboardCat();
 		}

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Boat : MonoBehaviour {
 
 	[Header("Parameters")]
+	[SerializeField] int playerID;
 	[SerializeField] float movementSpeed;
 
 	[Header("References")]
@@ -19,12 +20,11 @@ public class Boat : MonoBehaviour {
 	int fish1Count;
 	int fish2Count;
 	int fish3Count;
-
-	// Cat Stuff
 	bool catOnboard;
 
+
 	void Awake () {
-	
+
 		rb2d = this.GetComponentInChildren<Rigidbody2D>();
 		isOnWater = true;
 		catOnboard = true;
@@ -35,7 +35,7 @@ public class Boat : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 
-		if(other.CompareTag("Water")) {
+		if(other.CompareTag("Water") && catOnboard) {
 
 			isOnWater = true;
 		}
@@ -61,7 +61,7 @@ public class Boat : MonoBehaviour {
 
 	public void UnboardCat () {
 
-		if(catOnboard) {
+		if(!isOnWater && catOnboard) {
 			
 			GameObject cat = Instantiate(catPrefab, this.transform.position, Quaternion.identity) as GameObject;
 			cat.GetComponent<Cat>().SetBoat(this.gameObject);
@@ -104,5 +104,10 @@ public class Boat : MonoBehaviour {
 		fish1CountText.text = fish1Count.ToString ("000");
 		fish2CountText.text = fish2Count.ToString ("000");
 		fish3CountText.text = fish3Count.ToString ("000");
+	}
+
+	public int GetPlayerID () {
+
+		return playerID;
 	}
 }
