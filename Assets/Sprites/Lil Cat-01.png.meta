@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: f425ef0c3743590459e472fdcd03bf09
+timeCreated: 1477775328
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Lil Cat-01_0
+    21300002: Lil Cat-01_1
+    21300004: Lil Cat-01_2
+    21300006: Lil Cat-01_3
+    21300008: Lil Cat-01_4
+    21300010: Lil Cat-01_5
+    21300012: Lil Cat-01_6
+    21300014: Lil Cat-01_7
+    21300016: Lil Cat-01_8
+    21300018: Lil Cat-01_9
+    21300020: Lil Cat-01_10
+    21300022: Lil Cat-01_11
+    21300024: Lil Cat-01_12
+    21300026: Lil Cat-01_13
+    21300028: Lil Cat-01_14
+    21300030: Lil Cat-01_15
+    21300032: Lil Cat-01_16
+    21300034: Lil Cat-01_17
+    21300036: Lil Cat-01_18
+    21300038: Lil Cat-01_19
+    21300040: Lil Cat-01_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lil Cat-01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_1
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 3200.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_2
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 3200.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_3
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 3200.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_4
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 3200.25
+        width: 711.16675
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0.5000002, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_6
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_7
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_8
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_9
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_10
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 2134.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1068.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_12
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1068.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_13
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1068.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_14
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1068.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_15
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 1068.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_17
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_18
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_19
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 2.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lil Cat-01_20
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2.25
+        width: 711.1667
+        height: 1066.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
