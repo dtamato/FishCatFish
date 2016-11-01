@@ -101,9 +101,9 @@ public class Boat : MonoBehaviour {
 		fish2Count += fish2;
 		fish3Count += fish3;
 
-		fish1CountText.text = fish1Count.ToString ("000");
-		fish2CountText.text = fish2Count.ToString ("000");
-		fish3CountText.text = fish3Count.ToString ("000");
+		fish1CountText.text = " " + fish1Count.ToString ("00");
+		fish2CountText.text = " " + fish2Count.ToString ("00");
+		fish3CountText.text = " " + fish3Count.ToString ("00");
 	}
 
 	public int GetPlayerID () {
