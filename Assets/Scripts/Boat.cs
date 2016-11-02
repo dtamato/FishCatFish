@@ -59,6 +59,14 @@ public class Boat : MonoBehaviour {
 		}
 	}
 
+	public void Boost () {
+
+		if (isOnWater) {
+
+			// TODO: BOOSTTTTTT
+		}
+	}
+
 	public void UnboardCat () {
 
 		if(!isOnWater && catOnboard) {
