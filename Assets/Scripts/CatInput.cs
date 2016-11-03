@@ -4,7 +4,7 @@ using System.Collections;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Cat))]
-public class CatKeyboardActions : MonoBehaviour {
+public class CatInput : MonoBehaviour {
 
 	Player player;
 	Cat cat;
