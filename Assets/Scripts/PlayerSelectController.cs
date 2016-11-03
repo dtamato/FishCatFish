@@ -12,8 +12,8 @@ public class PlayerSelectController : MonoBehaviour {
 	[SerializeField] GameObject readyGameObject;
 
 	Player player;
-	bool characterSelected;
-	bool boatSelected;
+//	bool characterSelected;
+//	bool boatSelected;
 
 	void Awake() {
 
@@ -21,8 +21,8 @@ public class PlayerSelectController : MonoBehaviour {
 		characterSelect.SetActive (false);
 		boatSelect.SetActive(false);
 		readyGameObject.SetActive(false);
-		characterSelected = false;
-		boatSelected = false;
+//		characterSelected = false;
+//		boatSelected = false;
 	}
 	
 	// Update is called once per frame
@@ -34,19 +34,21 @@ public class PlayerSelectController : MonoBehaviour {
 
 				playerEnterObject.SetActive (false);
 				characterSelect.SetActive (true);
+				GameObject.FindGameObjectWithTag ("GameController").GetComponentInChildren<LobbySceneController> ().PlayerAdded ();
 			}
-			else if(!characterSelected) {
-
-				characterSelect.SetActive(false);
-				characterSelected = true;
-				boatSelect.SetActive(true);
-			}
-			else if(!boatSelected) {
-
-				boatSelect.SetActive(false);
-				boatSelected = true;
-				readyGameObject.SetActive(true);
-			}
+//			else if(!characterSelected) {
+//
+//				characterSelect.SetActive(false);
+//				characterSelected = true;
+//				boatSelect.SetActive(true);
+//			}
+//			else if(!boatSelected) {
+//
+//				boatSelect.SetActive(false);
+//				boatSelected = true;
+//				readyGameObject.SetActive(true);
+//				//GameObject.FindGameObjectWithTag ("GameController").GetComponentInChildren<LobbySceneController> ().PlayerAdded ();
+//			}
 		}
 	}
 }

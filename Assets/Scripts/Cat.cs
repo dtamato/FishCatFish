@@ -8,6 +8,7 @@ public class Cat : MonoBehaviour {
 	[Header("Parameters")]
 	[SerializeField] float movementSpeed;
 
+	int playerID;
 	Rigidbody2D rb2d;
 	GameObject boat;
 	bool inWater;
@@ -92,5 +93,15 @@ public class Cat : MonoBehaviour {
 			boat.GetComponentInChildren<Boat>().BoardCat();
 			Destroy(this.gameObject);
 		}
+	}
+
+	public void SetPlayerID (int newID) {
+
+
+	}
+
+	public int GetPlayerID() {
+
+		return playerID;
 	}
 }

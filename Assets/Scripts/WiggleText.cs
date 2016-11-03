@@ -4,7 +4,8 @@ using System.Collections;
 [DisallowMultipleComponent]
 public class WiggleText : MonoBehaviour {
 
-	[SerializeField] int rotationDirection;
+	[SerializeField] int rotationDirection = 1;
+	[SerializeField] float rotationSpeed = 20;
 
 	float timer;
 
@@ -23,6 +24,6 @@ public class WiggleText : MonoBehaviour {
 			timer = 0;
 		}
 
-		this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0, 0, rotationDirection * 10), 20 * Time.deltaTime);
+		this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0, 0, rotationDirection * 10), rotationSpeed * Time.deltaTime);
 	}
 }

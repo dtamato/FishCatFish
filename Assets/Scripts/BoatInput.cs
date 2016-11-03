@@ -4,7 +4,7 @@ using System.Collections;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Boat))]
-public class BoatKeyboardActions : MonoBehaviour {
+public class BoatInput : MonoBehaviour {
 
 	Boat boat;
 	Player player;
@@ -50,6 +50,12 @@ public class BoatKeyboardActions : MonoBehaviour {
 		if(player.GetButtonDown("BoardUnboard")) {
 
 			boat.UnboardCat();
+		}
+
+		// Boost
+		if (player.GetButtonDown ("Boost")) {
+
+			boat.Boost ();
 		}
 	}
 }

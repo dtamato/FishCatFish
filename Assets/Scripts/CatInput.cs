@@ -13,6 +13,7 @@ public class CatKeyboardActions : MonoBehaviour {
 	void Awake () {
 
 		cat = this.GetComponentInChildren<Cat>();
+		player = ReInput.players.GetPlayer (cat.GetPlayerID ());
 	}
 
 	void Update () {

@@ -25,8 +25,8 @@ public class Water : MonoBehaviour {
 		raisingTide = false;
 
 		Bounds bounds = this.GetComponentInChildren<BoxCollider2D>().bounds;
-		minXPosition = this.transform.position.x - bounds.extents.x;
-		maxXPosition = this.transform.position.x + bounds.extents.x;
+		minXPosition = this.transform.position.x - bounds.extents.x + 2;
+		maxXPosition = this.transform.position.x + bounds.extents.x - 2;
 		minYPosition = bounds.center.y - bounds.extents.y;
 		maxYPosition = bounds.center.y + bounds.extents.y - 2;
 	}
